@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
-  app.enableCors({ origin: 'http://localhost:3000' });
+  app.enableCors({ origin: 'https://stately-marigold-a733a6.netlify.app/' });
   await app.listen(4000);
 }
 bootstrap();
