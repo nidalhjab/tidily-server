@@ -16,6 +16,9 @@ import { WorkSpaceModule } from './work-space/work-space.module';
       driver: ApolloDriver,
       autoSchemaFile: true,
       playground: true,
+      cors: {
+        origin: 'https://tidily-web.vercel.app'
+      }
     }),
     TypeOrmModule.forRoot({
       host: process.env.POSTGRES_HOST,
