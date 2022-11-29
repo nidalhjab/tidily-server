@@ -26,6 +26,7 @@ import { WorkSpaceModule } from './work-space/work-space.module';
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DATABASE,
+      url: process.env.DATABASE_URL,
       autoLoadEntities: true,
       synchronize: true,
       logging: true,
