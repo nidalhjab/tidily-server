@@ -22,7 +22,6 @@ import { WorkSpaceModule } from './work-space/work-space.module';
     }),
     TypeOrmModule.forRoot({
       host: process.env.POSTGRES_HOST,
-      port: parseInt(<string>process.env.POSTGRES_PORT),
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DATABASE,
