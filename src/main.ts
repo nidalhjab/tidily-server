@@ -6,8 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.enableCors({
-    origin: 'https://tidily-web.vercel.app',
-    credentials: true,
+    origin: 'https://tidily-web.vercel.app'
   });
   await app.listen(4000);
 }
