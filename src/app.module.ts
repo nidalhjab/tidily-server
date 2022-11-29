@@ -16,10 +16,6 @@ import { WorkSpaceModule } from './work-space/work-space.module';
       driver: ApolloDriver,
       autoSchemaFile: true,
       playground: true,
-      cors: {
-        origin: 'https://stately-marigold-a733a6.netlify.app/graphql',
-        credentials: true
-      }
     }),
     TypeOrmModule.forRoot({
       host: process.env.POSTGRES_HOST,
