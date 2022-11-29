@@ -15,7 +15,11 @@ import { WorkSpaceModule } from './work-space/work-space.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
-      playground: true
+      playground: true,
+      cors: {
+        origin: 'https://stately-marigold-a733a6.netlify.app/',
+        credentials: true
+      }
     }),
     TypeOrmModule.forRoot({
       host: process.env.POSTGRES_HOST,
