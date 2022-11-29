@@ -17,7 +17,7 @@ import { WorkSpaceModule } from './work-space/work-space.module';
       autoSchemaFile: true,
       playground: true,
       cors: {
-        origin: 'https://stately-marigold-a733a6.netlify.app/',
+        origin: 'https://stately-marigold-a733a6.netlify.app/graphql',
         credentials: true
       }
     }),
