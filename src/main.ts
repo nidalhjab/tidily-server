@@ -6,7 +6,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.enableCors({
-    allowedHeaders: ['content-type'],
     origin: 'https://stately-marigold-a733a6.netlify.app',
     credentials: true,
   });
